@@ -1,6 +1,6 @@
 import faunadb from "faunadb";
 
-const secret = process.env.DB_CONN;
+const secret = process.env.FAUNADB_SECRET_KEY;
 
 const client = () => new faunadb.Client({ secret });
 
