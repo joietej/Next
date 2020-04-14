@@ -1,0 +1,9 @@
+# import Post from 'types.gql'
+
+type Query {
+    posts: [Post]!
+}
+
+type Mutation {
+    addPost(name:String!):Post!
+}
