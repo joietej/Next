@@ -1,4 +1,30 @@
+type Tag {
+  slug: String
+  name: String
+  postCount: Int
+}
+
+type Topic {
+  slug: String
+  name: String
+  description: String
+}
+
+type Link {
+  url: String!
+}
+
 type Post {
-    id: ID!,
-    name: String!
+  ref: ID!
+  id: String!
+  title: String!
+  description: String
+  links: [Link]
+  topics: [Topic]
+  tags: [Tag]
+}
+
+input PostReq {
+  id: String!
+  title: String!
 }

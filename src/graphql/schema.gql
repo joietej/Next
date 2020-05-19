@@ -1,9 +1,9 @@
 # import Post from 'types.gql'
 
 type Query {
-    posts: [Post]!
+  posts: [Post]!
 }
 
 type Mutation {
-    addPost(name:String!):Post!
+  addPost(post: PostReq!): Post!
 }

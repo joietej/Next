@@ -3,7 +3,7 @@ const resolvers = {
     posts: async (_, __, { service }) => await service.getPosts(),
   },
   Mutation: {
-    addPost: (_, args, { service }) => service.addPost(args.name),
+    addPost: (_, args, { service }) => service.addPost(args.post),
   },
 };
 
